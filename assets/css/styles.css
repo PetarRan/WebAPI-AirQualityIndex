@@ -1,0 +1,248 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rimouski', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth
+}
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgba(23, 146, 146, 0.486)50%, rgba(100, 255, 183, 0.719) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    box-shadow: inset 0 0 600px black;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255, 255, 255, 0);
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  .col-md-3{
+    margin-left: 3% ;
+    margin-right: 3%;
+    border-color: rgba(0,0,0,0);
+  }
+
+/*animacija bckgrnd*/
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+  @media (max-width:700px){
+    #infoBox{
+      display: flex;
+      flex-direction: column;
+    }
+    .col-md-3{
+      margin-top: 2%;
+      padding-right: 5%;
+      padding-left: 5%;
+      margin-bottom: 2%;
+    }
+  }
+
+  .container2{
+    width: 300px;    
+    background-color: rgba(255, 255, 255, 0.63);
+    box-shadow: 5px 10px 8px #00000094;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-bottom : 50px;
+    font-family: 'Rimouski', sans-serif;
+}
+
+
+.app-title{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #293251;
+}
+
+.notification{
+  background-color: #f8d7da;
+  display: none;
+}
+
+.notification p{
+  color: #721c24;
+  font-size: 1.2em;
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+.aqi-container{
+  width: 300px;
+  height: 280px;
+  background-color: #F4F9FF;
+  text-align: center;
+  align-content: center;
+  z-index: -1;
+
+}
+
+.aqi-icon{
+  padding-top: 1rem;
+  width: 300px;
+  height: 90px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.aqi-index-value{
+  width: 300px;
+  height:60px;
+}
+
+.aqi-index-value p{
+  padding: 0;
+  margin: 0;
+  color: #293251;
+  font-size: 4em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fav{
+  display: flexbox;
+  position: absolute;
+  margin-left:135px;
+}
+
+#buttonFav{
+  font-family: 'Rimouski', sans-serif;
+  margin-top: 1%;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 2rem;
+  border: none;
+
+}
+
+
+#buttonFav:hover{
+  color: rgba(1, 7, 0, 0.699);
+  background-color: rgba(0, 128, 0, 0.397);
+}
+
+.aqi-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.fav-container{
+  font-family: 'Rimouski', sans-serif;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  padding: .5rem;
+  border-radius: 15px;
+  background-color: transparent;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
+
+.fav-container p {
+  justify-content: center;
+  display: flex;
+}
+
+.fav-card{
+  margin-top: .5rem;
+  text-align: center;
+  display: flexbox;
+  border-color: black;
+  border-style:groove;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.705);
+  box-shadow: 5px 10px 8px #00000094;
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.row{
+  display:flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+#infoBox{
+  text-align: center;
+  
+}
+
+.remove-button{
+  background-color: transparent;
+  border-radius: 50px;
+}
+
+.remove-button:hover{
+  background-color: rgba(255, 0, 0, 0.438);
+}
+
+.container-info{
+  margin-top: 15px;
+  border-color: rgba(19, 122, 71, 0.568);
+  background: rgba(137, 235, 141, 0.678);
+  width: 95%;
+  margin-left: 2.5%;
+  margin-bottom: 2%;
+  border-radius: 15px;
+  border: initial;
+  box-shadow: 5px 10px 8px #00000094;
+  font-family: 'Rimouski', sans-serif;
+}
